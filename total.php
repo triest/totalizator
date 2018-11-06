@@ -4,10 +4,10 @@ function score($real_1,$real_2,$pred_1,$pred_2){
 	//счет угадан полностью
  if ($real_1==$pred_1 and $real_2==$pred_2) {
  	return 1;
- }
+ }//`победитель угадан
  elseif (($real_1>$real_2 and $pred_1>$pred_2) or($real_1<$real_2 and $pred_1<$pred_2)) {
  	return 0;
- }
+ }//не угадан
   else{
   	return -1;
   }
